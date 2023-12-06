@@ -3,7 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser');
 const proxy = require('express-http-proxy')
 
-require('dotenv').config()
+require('dotenv').config({path: __dirname + '/.env'})
 
 const PORT = process.env.PORT
 
