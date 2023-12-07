@@ -12,9 +12,9 @@ const app = express()
 app.use(cors())
 
 
-app.use('/admin', proxy('http://localhost:3001'))
-app.use('/vendors', proxy('http://localhost:3002'))
-app.use('/', proxy('http://localhost:3003'))
+app.use('/admin', proxy('https://admin-dqcw.onrender.com:3001'))
+app.use('/vendors', proxy('https://vendors-jpnc.onrender.com:3002'))
+app.use('/', proxy('https://users-40pl.onrender.com:3003'))
 
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: true }))
