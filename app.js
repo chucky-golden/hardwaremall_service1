@@ -15,7 +15,7 @@ app.use(cors())
 
 app.use('/admin', proxy('https://admin-dqcw.onrender.com'))
 app.use('/vendors', proxy('https://vendors-jpnc.onrender.com'))
-app.use('/', proxy('https://users-40pl.onrender.com'))
+app.use('/users', proxy('https://users-40pl.onrender.com'))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
